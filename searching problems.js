@@ -3,7 +3,7 @@ export default function binarySearchIterative() {
   const searchElement = 78;
   let low = 0;
   let high = input.length - 1;
-  while (parseInt((high - low) / 2) > 0) {
+  // while (parseInt((high - low) / 2) > 0) {
     // if (input[parseInt((high - low) / 2)] === searchElement) {
     //   console.log(parseInt((high - low) / 2));
     //   return parseInt((high - low) / 2);
@@ -14,5 +14,5 @@ export default function binarySearchIterative() {
     //   console.log(parseInt((high - low) / 2));
     //   low = parseInt((high - low) / 2) + 1;
     // }
-  }
+  // }
 }
