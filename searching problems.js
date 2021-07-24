@@ -50,3 +50,28 @@ function callbyRecursively(low, high, input, searchElement) {
     }
   }
 }
+
+// 3
+export function findFirstIndexBinarySearchIterative() {
+  const input = [5, 20, 20, 20, 20];
+  const searchElement = 20;
+  let low = 0;
+  let high = input.length - 1;
+  while (low <= high) {
+    const mid = parseInt((high + low) / 2);
+    if (input[mid] > searchElement) {
+      high = mid;
+    } else if (input[mid] < searchElement) {
+      low = mid + 1;
+    } else {
+      // tricky
+      if (mid === 0 || input[mid - 1] !== input[mid]) {
+        console.log(mid);
+        return mid;
+      } else {
+        high = mid - 1;
+      }
+    }
+  }
+  console.log(-1);
+}

@@ -6,8 +6,10 @@
 // appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 import binarySearchIterative, {
-  binarySearchRecursive
+  binarySearchRecursive,
+  findFirstIndexBinarySearchIterative
 } from './searching problems';
 
-binarySearchIterative();
-binarySearchRecursive();
+// binarySearchIterative();
+// binarySearchRecursive();
+findFirstIndexBinarySearchIterative();
