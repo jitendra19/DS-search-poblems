@@ -9,11 +9,13 @@ import binarySearchIterative, {
   binarySearchRecursive,
   findFirstIndexBinarySearchIterative,
   findLastIndexBinarySearchIterative,
-  CountOccuranceBinarySearchIterative
+  CountOccuranceBinarySearchIterative,
+  countOccuranceOf1sInSortedBinaryArray
 } from './searching problems';
 
 // binarySearchIterative();
 // binarySearchRecursive();
 // findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
-CountOccuranceBinarySearchIterative();
+// CountOccuranceBinarySearchIterative();
+countOccuranceOf1sInSortedBinaryArray();

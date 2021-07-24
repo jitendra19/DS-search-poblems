@@ -52,9 +52,9 @@ function callbyRecursively(low, high, input, searchElement) {
 }
 
 // 3
-export function findFirstIndexBinarySearchIterative() {
-  const input = [5, 10, 20, 20, 20, 20, 20];
-  const searchElement = 20;
+export function findFirstIndexBinarySearchIterative(input, searchElement) {
+  // const input = [5, 10, 20, 20, 20, 20, 20];
+  // const searchElement = 20;
   let low = 0;
   let high = input.length - 1;
   while (low <= high) {
@@ -78,9 +78,9 @@ export function findFirstIndexBinarySearchIterative() {
 }
 
 // 4
-export function findLastIndexBinarySearchIterative() {
-  const input = [5, 10, 20, 20, 20, 20, 20];
-  const searchElement = 20;
+export function findLastIndexBinarySearchIterative(input, searchElement) {
+  // const input = [5, 10, 20, 20, 20, 20, 20];
+  // const searchElement = 20;
   let low = 0;
   let high = input.length - 1;
   while (low <= high) {
@@ -106,10 +106,21 @@ export function findLastIndexBinarySearchIterative() {
 
 // 5
 export function CountOccuranceBinarySearchIterative() {
-  console.log('abc');
   const input = [5, 10, 20, 20, 20, 20, 20];
-  const firstIndex = findFirstIndexBinarySearchIterative();
-  const lastIndex = findLastIndexBinarySearchIterative();
+  const firstIndex = findFirstIndexBinarySearchIterative(input, 20);
+  const lastIndex = findLastIndexBinarySearchIterative(input, 20);
+  if (firstIndex === -1 || lastIndex === -1) {
+    return 0;
+  } else {
+    console.log('occurance - ', lastIndex - firstIndex + 1);
+  }
+}
+
+// 6 count 1's in sorted binary array
+export function countOccuranceOf1sInSortedBinaryArray() {
+  const input = [0, 0, 0, 1, 1, 1, 1, 1];
+  const firstIndex = findFirstIndexBinarySearchIterative(input, 1);
+  const lastIndex = findLastIndexBinarySearchIterative(input, 1);
   if (firstIndex === -1 || lastIndex === -1) {
     return 0;
   } else {
