@@ -127,3 +127,25 @@ export function countOccuranceOf1sInSortedBinaryArray() {
     console.log('occurance - ', lastIndex - firstIndex + 1);
   }
 }
+
+// 7 - Alternative method -  count 1's in sorted binary array
+export function countOccuranceOf1sInSortedBinaryArray1() {
+  const input = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1];
+  let low = 0;
+  let high = input.length - 1;
+  while (low <= high) {
+    const mid = parseInt((high + low) / 2);
+    if (input[mid] === 0) {
+      low = mid + 1;
+    } else {
+      if (mid === 0 || input[mid - 1] === 0) {
+        console.log(input.length - mid);
+        return input.length - mid;
+      } else {
+        // tricky
+        high = mid - 1;
+      }
+    }
+  }
+  return 0;
+}
