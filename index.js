@@ -5,6 +5,9 @@
 // const appDiv = document.getElementById('app');
 // appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
-import binarySearchIterative from './searching problems';
+import binarySearchIterative, {
+  binarySearchRecursive
+} from './searching problems';
 
 binarySearchIterative();
+binarySearchRecursive();

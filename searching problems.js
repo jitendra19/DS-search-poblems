@@ -1,9 +1,10 @@
+// 1
 export default function binarySearchIterative() {
   const input = [1, 4, 5, 6, 7, 8, 12, 30, 45, 78, 567];
   const searchElement = 781; // 78
   let low = 0;
   let high = input.length - 1;
-  while (low !== high) {
+  while (low < high) {
     if (input[parseInt((high + low) / 2)] === searchElement) {
       // console.log(input[parseInt((high + low) / 2)]);
       console.log(parseInt((high + low) / 2));
@@ -15,4 +16,37 @@ export default function binarySearchIterative() {
     }
   }
   console.log(-1);
+}
+
+// 2
+export function binarySearchRecursive() {
+  const input = [1, 4, 5, 6, 7, 8, 12, 30, 45, 78, 567];
+  callbyRecursively(0, input.length - 1, input, 567);
+}
+
+function callbyRecursively(low, high, input, searchElement) {
+  if (low > high) {
+    console.log(-1);
+    return -1;
+  } else {
+    if (input[parseInt((high + low) / 2)] === searchElement) {
+      // console.log(input[parseInt((high + low) / 2)]);
+      console.log(parseInt((high + low) / 2));
+      return parseInt((high + low) / 2);
+    } else if (input[parseInt((high + low) / 2)] > searchElement) {
+      return callbyRecursively(
+        0,
+        parseInt((high + low) / 2),
+        input,
+        searchElement
+      );
+    } else {
+      return callbyRecursively(
+        parseInt((high + low) / 2) + 1,
+        high,
+        input,
+        searchElement
+      );
+    }
+  }
 }
