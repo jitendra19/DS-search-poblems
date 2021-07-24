@@ -53,7 +53,7 @@ function callbyRecursively(low, high, input, searchElement) {
 
 // 3
 export function findFirstIndexBinarySearchIterative() {
-  const input = [5, 20, 20, 20, 20];
+  const input = [5, 10, 20, 20, 20, 20, 20];
   const searchElement = 20;
   let low = 0;
   let high = input.length - 1;
@@ -74,11 +74,11 @@ export function findFirstIndexBinarySearchIterative() {
     }
   }
   console.log(-1);
+  return -1;
 }
 
 // 4
 export function findLastIndexBinarySearchIterative() {
-  console.log('abc');
   const input = [5, 10, 20, 20, 20, 20, 20];
   const searchElement = 20;
   let low = 0;
@@ -101,4 +101,18 @@ export function findLastIndexBinarySearchIterative() {
     }
   }
   console.log(-1);
+  return -1;
+}
+
+// 5
+export function CountOccuranceBinarySearchIterative() {
+  console.log('abc');
+  const input = [5, 10, 20, 20, 20, 20, 20];
+  const firstIndex = findFirstIndexBinarySearchIterative();
+  const lastIndex = findLastIndexBinarySearchIterative();
+  if (firstIndex === -1 || lastIndex === -1) {
+    return 0;
+  } else {
+    console.log('occurance - ', lastIndex - firstIndex + 1);
+  }
 }

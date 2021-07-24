@@ -8,10 +8,12 @@
 import binarySearchIterative, {
   binarySearchRecursive,
   findFirstIndexBinarySearchIterative,
-  findLastIndexBinarySearchIterative
+  findLastIndexBinarySearchIterative,
+  CountOccuranceBinarySearchIterative
 } from './searching problems';
 
 // binarySearchIterative();
 // binarySearchRecursive();
 // findFirstIndexBinarySearchIterative();
-findLastIndexBinarySearchIterative();
+// findLastIndexBinarySearchIterative();
+CountOccuranceBinarySearchIterative();
