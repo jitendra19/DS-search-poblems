@@ -7,9 +7,11 @@
 
 import binarySearchIterative, {
   binarySearchRecursive,
-  findFirstIndexBinarySearchIterative
+  findFirstIndexBinarySearchIterative,
+  findLastIndexBinarySearchIterative
 } from './searching problems';
 
 // binarySearchIterative();
 // binarySearchRecursive();
-findFirstIndexBinarySearchIterative();
+// findFirstIndexBinarySearchIterative();
+findLastIndexBinarySearchIterative();
