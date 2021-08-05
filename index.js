@@ -6,7 +6,7 @@
 // appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 import binarySearchIterative, {
-  binarySearchRecursive,
+  binarySerachRecur,
   findFirstIndexBinarySearchIterative,
   findLastIndexBinarySearchIterative,
   CountOccuranceBinarySearchIterative,
@@ -14,8 +14,8 @@ import binarySearchIterative, {
   countOccuranceOf1sInSortedBinaryArray1
 } from './searching problems';
 
-binarySearchIterative();
-// binarySearchRecursive();
+// binarySearchIterative();
+binarySerachRecur();
 // findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
 // CountOccuranceBinarySearchIterative();

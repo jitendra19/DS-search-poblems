@@ -19,36 +19,25 @@ export default function binarySearchIterative() {
 }
 
 // 2
-export function binarySearchRecursive() {
-  const input = [1, 4, 5, 6, 7, 8, 12, 30, 45, 78, 567];
-  callbyRecursively(0, input.length - 1, input, 567);
-}
-
-function callbyRecursively(low, high, input, searchElement) {
-  if (low > high) {
+export function binarySerachRecur(input, low, high, searchElement) {
+  input = [1, 4, 5, 6, 7, 8, 12, 30, 45, 78, 567];
+  searchElement = ; // 78
+  if (!low) low = 0;
+  if (!high) high = input.length;
+  const mid = parseInt((low + high) / 2);
+  if (low >= high) {
     console.log(-1);
     return -1;
+  } 
+  if (input[mid] === searchElement) {
+    console.log(mid);
+    return mid;
+  } else if (input[mid] > searchElement) {
+    high = mid;
   } else {
-    if (input[parseInt((high + low) / 2)] === searchElement) {
-      // console.log(input[parseInt((high + low) / 2)]);
-      console.log(parseInt((high + low) / 2));
-      return parseInt((high + low) / 2);
-    } else if (input[parseInt((high + low) / 2)] > searchElement) {
-      return callbyRecursively(
-        0,
-        parseInt((high + low) / 2),
-        input,
-        searchElement
-      );
-    } else {
-      return callbyRecursively(
-        parseInt((high + low) / 2) + 1,
-        high,
-        input,
-        searchElement
-      );
-    }
+    low = mid + 1;
   }
+  return binarySerachRecur(input, low, high, searchElement);
 }
 
 // 3
