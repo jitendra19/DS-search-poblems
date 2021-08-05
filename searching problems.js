@@ -139,3 +139,46 @@ export function countOccuranceOf1sInSortedBinaryArray1() {
   }
   return 0;
 }
+
+export function commonFunction() {
+  squareRoot1(24);
+  squareRoot1(25);
+  squareRoot1(26);
+  squareRoot1(30);
+  squareRoot1(34);
+  squareRoot1(36);
+  squareRoot1(37);
+  squareRoot1(1235456234234);
+}
+
+//8
+// find the floor of square root of given number
+function squareRoot(num) {
+  let i = 1;
+  while (i * i <= num) {
+    i++;
+  }
+  console.log(i - 1);
+}
+
+// 9
+// find the floor of square root of given number (alternative)
+function squareRoot1(num) {
+  let low = 0;
+  let high = num;
+  let result;
+  while (low <= high) {
+    let mid = parseInt((low + high) / 2);
+    if (mid * mid < num) {
+      low = mid + 1;
+      result = mid;
+    } else if (mid * mid > num) {
+      high = mid - 1;
+    } else {
+      result = mid;
+      console.log(result);
+      return;
+    }
+  }
+  console.log(result);
+}

@@ -11,7 +11,8 @@ import binarySearchIterative, {
   findLastIndexBinarySearchIterative,
   CountOccuranceBinarySearchIterative,
   countOccuranceOf1sInSortedBinaryArray,
-  countOccuranceOf1sInSortedBinaryArray1
+  countOccuranceOf1sInSortedBinaryArray1,
+  commonFunction
 } from './searching problems';
 
 // binarySearchIterative();
@@ -19,5 +20,6 @@ import binarySearchIterative, {
 // findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
 // CountOccuranceBinarySearchIterative();
-countOccuranceOf1sInSortedBinaryArray();
+// countOccuranceOf1sInSortedBinaryArray();
 // countOccuranceOf1sInSortedBinaryArray1();
+commonFunction();
