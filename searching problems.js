@@ -54,7 +54,7 @@ export function findFirstIndexBinarySearchIterative(input, searchElement) {
       high = mid;
     } else if (input[mid] < searchElement) {
       low = mid + 1;
-    } else if (input[mid] === searchElement) {
+    } else {
       console.log(mid, '---', input[mid]);
       if (mid === 0 || input[mid - 1] !== input[mid]) {
         console.log(mid);
