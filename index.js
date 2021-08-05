@@ -15,8 +15,8 @@ import binarySearchIterative, {
 } from './searching problems';
 
 // binarySearchIterative();
-binarySerachRecur();
-// findFirstIndexBinarySearchIterative();
+// binarySerachRecur();
+findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
 // CountOccuranceBinarySearchIterative();
 // countOccuranceOf1sInSortedBinaryArray();
