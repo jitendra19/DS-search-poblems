@@ -41,37 +41,9 @@ export function binarySerachRecur(input, low, high, searchElement) {
 }
 
 // 3
-
 export function findFirstIndexBinarySearchIterative(input, searchElement) {
-  input = [5, 10, 20, 20, 20, 20, 20, 20, 20, 50, 50, 50, 50, 50];
-  searchElement = 510;
-  let low = 0;
-  let high = input.length;
-  // console.log('sadf')
-  while (low <= high) {
-    const mid = parseInt((low + high) / 2);
-    if (input[mid] > searchElement) {
-      high = mid;
-    } else if (input[mid] < searchElement) {
-      low = mid + 1;
-    } else {
-      console.log(mid, '---', input[mid]);
-      if (mid === 0 || input[mid - 1] !== input[mid]) {
-        console.log(mid);
-        return mid;
-      } else {
-        high = mid - 1;
-      }
-    }
-  }
-  console.log(-1);
-  return -1;
-}
-
-// 3
-export function findFirstIndexBinarySearchIterative1(input, searchElement) {
-  // const input = [5, 10, 20, 20, 20, 20, 20];
-  // const searchElement = 20;
+  input = [5, 10, 20, 20, 20, 20, 20];
+  searchElement = 20;
   let low = 0;
   let high = input.length - 1;
   while (low <= high) {
