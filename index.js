@@ -14,10 +14,10 @@ import binarySearchIterative, {
   countOccuranceOf1sInSortedBinaryArray1
 } from './searching problems';
 
-// binarySearchIterative();
+binarySearchIterative();
 // binarySearchRecursive();
 // findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
 // CountOccuranceBinarySearchIterative();
 // countOccuranceOf1sInSortedBinaryArray();
-countOccuranceOf1sInSortedBinaryArray1();
+// countOccuranceOf1sInSortedBinaryArray1();
