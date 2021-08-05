@@ -16,8 +16,8 @@ import binarySearchIterative, {
 
 // binarySearchIterative();
 // binarySerachRecur();
-findFirstIndexBinarySearchIterative();
+// findFirstIndexBinarySearchIterative();
 // findLastIndexBinarySearchIterative();
 // CountOccuranceBinarySearchIterative();
-// countOccuranceOf1sInSortedBinaryArray();
+countOccuranceOf1sInSortedBinaryArray();
 // countOccuranceOf1sInSortedBinaryArray1();

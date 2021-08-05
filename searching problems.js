@@ -110,6 +110,7 @@ export function countOccuranceOf1sInSortedBinaryArray() {
   const input = [0, 0, 0, 1, 1, 1, 1, 1];
   const firstIndex = findFirstIndexBinarySearchIterative(input, 1);
   const lastIndex = findLastIndexBinarySearchIterative(input, 1);
+  // console.log('occurance - ', input.length - firstIndex);
   if (firstIndex === -1 || lastIndex === -1) {
     return 0;
   } else {
